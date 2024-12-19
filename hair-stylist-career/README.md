@@ -1,2 +1,2 @@
-# https://MCLand-NTU.github.io/Hair-stylist-career/
+# https://aspiring-careers.github.io/hair-stylist-career/
 Hair stylist career webpage
