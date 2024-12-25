@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://aspiring-careers.github.io/hair-stylist-career/sitemap.xml
