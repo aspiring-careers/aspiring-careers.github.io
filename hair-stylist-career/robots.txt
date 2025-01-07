@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: 
-Disallow: /cgi-bin/
 Sitemap: https://aspiring-careers.github.io/hair-stylist-career/sitemap.xml
 
 
