@@ -150,10 +150,13 @@
        <br>
        <h1> The Windows Disk Cleanup utility to remove unnecessary files from your hard disk</h1>
        <h4>Open the command line with Administrator then, type the below commands: </h4>
-       
+       <br>
+		<p> cleanmgr.exe is the executable file for the Windows Disk Cleanup tool, a utility used to free up disk space by removing unnecessary files like temporary internet files, Recycle Bin contents, and system files. It helps maintain system performance by identifying and deleting files that are no longer needed.  </p>
        <p>>cleanmgr.exe</p>
 
        <h4>A Windows Tool that scans a disk:</h4>
+	<br>
+		<p>command scans the C drive for errors and will fix any it finds. To perform this, open Command Prompt as an administrator, type chkdsk C: and press Enter. For an automatic fix, use chkdsk C: /f to fix errors, and for the most thorough check that also locates and repairs bad sectors, use chkdsk C: /r</p>
        
       
 	<p>       >chdsk c: /r /f
@@ -162,6 +165,17 @@
              <br>
             >Optimize-Volume -DriverLetter D -Analyze -Verbose
             <br>
+		    <p>The PowerShell command Optimize-Volume -DriverLetter D -Analyze -Verbose is used to analyze the specified volume (D:) and display a detailed output of the analysis process. 
+                Here is a breakdown of each component:
+				<br>
+                Optimize-Volume: This is the core PowerShell cmdlet (command-let) used to optimize the allocation of space in or more volumes. For traditional Hard Disk Drives (HDDs), this process is defragmentation (rearranging fragmented data to be more efficient). For Solid State Drives (SSDs) and thinly provisioned storage, this runs the TRIM command (which tells the drive which data blocks are no longer in use, allowing it to manage its flash memory more efficiently).
+                <br>
+				-DriverLetter D: This parameter specifies that the operation should be performed on the volume assigned to the drive letter "D".
+                <br>
+				-Analyze: This parameter instructs the cmdlet to only perform an analysis of the volume's condition (e.g., fragmentation level, or if a retrim is needed) rather than actually performing the optimization/defragmentation itself. It provides a report on the current state of the drive.
+                <br>
+				-Verbose: This is a common PowerShell parameter that displays detailed information about the operation as it runs, including progress messages and specific actions taken during the analysis. 
+				</p>
     
 	 
       <br>
